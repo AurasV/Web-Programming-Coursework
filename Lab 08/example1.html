@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sumDigits(n) {
+            let s = 0;
+            while (n > 0) {
+                s += n % 10;
+                n = parseInt(n / 10);
+            }
+            return s;
+        }
+        console.log(sumDigits(123));
+        console.log(sumDigits(12301));
+        console.log(sumDigits(1010));
+
+    </script>
+</body>
+<html>
